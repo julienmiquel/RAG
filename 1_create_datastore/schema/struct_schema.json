@@ -1,0 +1,1089 @@
+
+{
+  "type": "object",
+  "properties": {
+    "is_translated": {
+      "type": "boolean"
+    },
+    "afpshortid": {
+      "retrievable": true,
+      "searchable": true,
+      "type": "string",
+      "indexable": true
+    },
+    "exclusion": {
+      "items": {
+        "type": "object",
+        "properties": {
+          "scheme": {
+            "type": "string"
+          },
+          "uri": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      },
+      "type": "array"
+    },
+    "subheadline": {
+      "type": "string"
+    },
+    "serial": {
+      "type": "string"
+    },
+    "entity_function": {
+      "items": {
+        "indexable": true,
+        "completable": true,
+        "type": "string",
+        "dynamicFacetable": true,
+        "searchable": true,
+        "retrievable": true
+      },
+      "type": "array"
+    },
+    "providerid": {
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "qcode": {
+          "type": "string"
+        },
+        "broader": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "wordCount": {
+      "type": "number"
+    },
+    "class": {
+      "dynamicFacetable": true,
+      "type": "string",
+      "indexable": true,
+      "retrievable": true
+    },
+    "usageRight": {
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "phrase": {
+            "type": "string"
+          }
+        }
+      },
+      "type": "array"
+    },
+    "title": {
+      "type": "string",
+      "retrievable": true,
+      "keyPropertyMapping": "title",
+      "completable": true
+    },
+    "advisory": {
+      "type": "string",
+      "indexable": false,
+      "searchable": true,
+      "retrievable": false
+    },
+    "channel": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "searchable": true,
+        "indexable": true,
+        "retrievable": true,
+        "dynamicFacetable": true
+      }
+    },
+    "entity_person": {
+      "type": "array",
+      "items": {
+        "searchable": true,
+        "type": "string",
+        "indexable": true,
+        "retrievable": true,
+        "dynamicFacetable": true
+      }
+    },
+    "caption": {
+      "type": "array",
+      "items": {
+        "searchable": true,
+        "retrievable": true,
+        "dynamicFacetable": true,
+        "type": "string",
+        "indexable": true
+      }
+    },
+    "objectName": {
+      "type": "string"
+    },
+    "entity_departement": {
+      "type": "array",
+      "items": {
+        "completable": true,
+        "dynamicFacetable": true,
+        "searchable": true,
+        "type": "string",
+        "retrievable": true,
+        "indexable": true
+      }
+    },
+    "versionModified": {
+      "type": "datetime"
+    },
+    "image_preview_url": {
+      "dynamicFacetable": true,
+      "retrievable": true,
+      "type": "string",
+      "searchable": true,
+      "indexable": true
+    },
+    "entity_company": {
+      "type": "array",
+      "items": {
+        "completable": true,
+        "dynamicFacetable": true,
+        "searchable": true,
+        "type": "string",
+        "retrievable": true,
+        "indexable": true
+      }
+    },
+    "provider": {
+      "type": "string",
+      "dynamicFacetable": true,
+      "retrievable": true,
+      "searchable": true,
+      "indexable": true
+    },
+    "contentModified": {
+      "type": "datetime",
+      "indexable": true,
+      "retrievable": true
+    },
+    "product": {
+      "type": "string"
+    },
+    "faces": {
+      "items": {
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "offsetX": {
+                  "type": "number"
+                },
+                "width": {
+                  "type": "number"
+                },
+                "href": {
+                  "type": "string"
+                },
+                "height": {
+                  "type": "number"
+                },
+                "offsetY": {
+                  "type": "number"
+                }
+              }
+            }
+          },
+          "src": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "entity_location": {
+      "items": {
+        "retrievable": true,
+        "searchable": true,
+        "type": "string",
+        "dynamicFacetable": true,
+        "indexable": true
+      },
+      "type": "array"
+    },
+    "bagItem": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "afpshortid": {
+            "type": "string"
+          },
+          "uno": {
+            "type": "string"
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "indexable": true,
+                "searchable": true,
+                "retrievable": true,
+                "dynamicFacetable": true
+              },
+              "qcode": {
+                "type": "string"
+              }
+            }
+          },
+          "provider": {
+            "type": "object",
+            "properties": {
+              "qcode": {
+                "indexable": false,
+                "retrievable": false,
+                "searchable": false,
+                "type": "string"
+              },
+              "broader": {
+                "searchable": true,
+                "dynamicFacetable": true,
+                "retrievable": true,
+                "type": "string",
+                "indexable": true
+              },
+              "name": {
+                "searchable": true,
+                "retrievable": true,
+                "dynamicFacetable": true,
+                "type": "string",
+                "indexable": true
+              },
+              "definition": {
+                "type": "string",
+                "searchable": true,
+                "dynamicFacetable": true,
+                "retrievable": true,
+                "indexable": true
+              }
+            }
+          },
+          "creator": {
+            "retrievable": true,
+            "indexable": true,
+            "dynamicFacetable": true,
+            "type": "string",
+            "searchable": true
+          },
+          "caption": {
+            "retrievable": true,
+            "dynamicFacetable": true,
+            "searchable": true,
+            "indexable": true,
+            "type": "string"
+          },
+          "originOfCopy": {
+            "type": "string"
+          },
+          "medias": {
+            "type": "array",
+            "items": {
+              "keyPropertyMapping": "image",
+              "properties": {
+                "rendition": {
+                  "indexable": true,
+                  "type": "string",
+                  "dynamicFacetable": true,
+                  "retrievable": true
+                },
+                "height": {
+                  "type": "number"
+                },
+                "width": {
+                  "type": "number",
+                  "indexable": false,
+                  "retrievable": false
+                },
+                "role": {
+                  "type": "string",
+                  "keyPropertyMapping": "image_name",
+                  "retrievable": true
+                },
+                "sizeInBytes": {
+                  "retrievable": false,
+                  "indexable": false,
+                  "type": "number"
+                },
+                "type": {
+                  "dynamicFacetable": true,
+                  "type": "string",
+                  "retrievable": true,
+                  "searchable": true,
+                  "indexable": true
+                },
+                "href": {
+                  "retrievable": true,
+                  "type": "string",
+                  "keyPropertyMapping": "image_uri"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "newslines": {
+            "properties": {
+              "subheadline": {
+                "type": "string",
+                "retrievable": true,
+                "searchable": true,
+                "indexable": true,
+                "dynamicFacetable": true
+              },
+              "dateline": {
+                "type": "string"
+              },
+              "advisory": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "headline": {
+                "retrievable": true,
+                "indexable": true,
+                "dynamicFacetable": true,
+                "searchable": true,
+                "type": "string"
+              },
+              "copyright": {
+                "type": "string"
+              },
+              "byline": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "comment": {
+      "items": {
+        "type": "string",
+        "dynamicFacetable": true,
+        "searchable": true,
+        "retrievable": true,
+        "indexable": true
+      },
+      "type": "array"
+    },
+    "city": {
+      "dynamicFacetable": true,
+      "retrievable": true,
+      "indexable": true,
+      "type": "string",
+      "searchable": true
+    },
+    "genreid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "revision": {
+      "type": "number"
+    },
+    "creator": {
+      "searchable": true,
+      "type": "string"
+    },
+    "country_only": {
+      "items": {
+        "type": "string",
+        "indexable": true,
+        "searchable": true,
+        "dynamicFacetable": true,
+        "retrievable": true
+      },
+      "type": "array"
+    },
+    "image_thumbnail_url": {
+      "dynamicFacetable": true,
+      "retrievable": true,
+      "searchable": true,
+      "indexable": true,
+      "type": "string"
+    },
+    "bagUno": {
+      "items": {
+        "type": "string",
+        "indexable": false,
+        "retrievable": false,
+        "searchable": false
+      },
+      "type": "array"
+    },
+    "summary": {
+      "items": {
+        "searchable": true,
+        "retrievable": true,
+        "dynamicFacetable": true,
+        "indexable": true,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "slug": {
+      "type": "array",
+      "items": {
+        "completable": true,
+        "indexable": true,
+        "dynamicFacetable": true,
+        "searchable": true,
+        "retrievable": true,
+        "type": "string"
+      }
+    },
+    "region": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "initialStatus": {
+      "type": "string"
+    },
+    "href": {
+      "searchable": true,
+      "type": "string",
+      "indexable": false,
+      "retrievable": true
+    },
+    "gcs_uri": {
+      "dynamicFacetable": true,
+      "indexable": true,
+      "type": "string",
+      "searchable": true,
+      "retrievable": true
+    },
+    "topic": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "countrycode": {
+      "searchable": false,
+      "type": "string",
+      "retrievable": false,
+      "indexable": false
+    },
+    "contains_video": {
+      "type": "string",
+      "retrievable": false,
+      "indexable": false,
+      "searchable": false
+    },
+    "iptc": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "citycode": {
+      "indexable": false,
+      "retrievable": false,
+      "type": "string",
+      "searchable": false
+    },
+    "refslug": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entity_work": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "searchable": true,
+        "indexable": true,
+        "dynamicFacetable": true
+      }
+    },
+    "hopHistory": {
+      "type": "object",
+      "properties": {
+        "hop": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "action": {
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "qcode": {
+                      "type": "string"
+                    },
+                    "target": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "type": "array"
+              },
+              "timestamp": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        }
+      }
+    },
+    "timestamp": {
+      "type": "datetime"
+    },
+    "sourceid": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "qcode": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "copyright": {
+      "type": "string",
+      "indexable": true,
+      "searchable": true,
+      "dynamicFacetable": true
+    },
+    "publicIdentifier": {
+      "retrievable": true,
+      "type": "string",
+      "dynamicFacetable": true,
+      "completable": false,
+      "indexable": true,
+      "searchable": true
+    },
+    "entity_media": {
+      "items": {
+        "completable": true,
+        "type": "string",
+        "searchable": true,
+        "indexable": true,
+        "retrievable": true,
+        "dynamicFacetable": true
+      },
+      "type": "array"
+    },
+    "event": {
+      "type": "array",
+      "items": {
+        "dynamicFacetable": true,
+        "indexable": true,
+        "searchable": true,
+        "type": "string"
+      }
+    },
+    "signal": {
+      "type": "string"
+    },
+    "news": {
+      "items": {
+        "dynamicFacetable": true,
+        "retrievable": true,
+        "searchable": true,
+        "type": "string",
+        "indexable": true
+      },
+      "type": "array"
+    },
+    "aspectRatios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "urgency": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    },
+    "sent": {
+      "type": "datetime"
+    },
+    "expires": {
+      "type": "string"
+    },
+    "poi": {
+      "type": "string"
+    },
+    "published": {
+      "dynamicFacetable": false,
+      "type": "datetime",
+      "indexable": true,
+      "retrievable": true
+    },
+    "genre": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "contributor": {
+      "type": "string",
+      "searchable": true,
+      "retrievable": true,
+      "dynamicFacetable": true,
+      "indexable": true
+    },
+    "entity_region": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "dept": {
+      "type": "string"
+    },
+    "guid": {
+      "type": "string",
+      "searchable": true
+    },
+    "created": {
+      "retrievable": true,
+      "type": "datetime",
+      "indexable": true
+    },
+    "country": {
+      "dynamicFacetable": true,
+      "indexable": true,
+      "type": "string",
+      "searchable": true,
+      "retrievable": true
+    },
+    "contributorid": {
+      "items": {
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "abstract": {
+      "indexable": true,
+      "searchable": true,
+      "dynamicFacetable": true,
+      "retrievable": true,
+      "type": "string"
+    },
+    "thematic": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "headline": {
+      "retrievable": true,
+      "indexable": true,
+      "type": "string",
+      "dynamicFacetable": true,
+      "searchable": true
+    },
+    "country_out": {
+      "items": {
+        "retrievable": true,
+        "indexable": true,
+        "searchable": true,
+        "dynamicFacetable": true,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "poicode": {
+      "type": "string"
+    },
+    "mediatopic": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "excludeAudiences": {
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "qcode": {
+            "type": "string"
+          }
+        }
+      },
+      "type": "array"
+    },
+    "entity_event": {
+      "type": "array",
+      "items": {
+        "retrievable": true,
+        "searchable": true,
+        "dynamicFacetable": true,
+        "completable": true,
+        "indexable": true,
+        "type": "string"
+      }
+    },
+    "contentCreated": {
+      "type": "datetime",
+      "retrievable": true,
+      "indexable": true
+    },
+    "introduced": {
+      "type": "datetime"
+    },
+    "language": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scalemin": {
+            "type": "number"
+          },
+          "scalemax": {
+            "type": "number"
+          },
+          "ratingtype": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "scaleunit": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "uno": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        }
+      }
+    },
+    "entity_organisation": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "dynamicFacetable": true,
+        "searchable": true,
+        "indexable": true,
+        "completable": true,
+        "retrievable": true
+      }
+    },
+    "keyword": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "newsItemID": {
+      "type": "string"
+    },
+    "afpentity": {
+      "properties": {
+        "organisation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "isin": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "qcode": {
+                "type": "string"
+              },
+              "keyword": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "event": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "keyword": {
+                "type": "string"
+              },
+              "qcode": {
+                "searchable": false,
+                "indexable": false,
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "ednote": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "qcode": {
+                "type": "string"
+              },
+              "keyword": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "city": {
+          "items": {
+            "properties": {
+              "qcode": {
+                "type": "string",
+                "searchable": true
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "lat": {
+                    "type": "number"
+                  },
+                  "lon": {
+                    "type": "number"
+                  }
+                }
+              },
+              "keyword": {
+                "type": "string",
+                "searchable": true
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "person": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "qcode": {
+                "type": "string"
+              },
+              "related": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "qcode": {
+                      "type": "string"
+                    },
+                    "rel": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "keyword": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "geoarea": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "location": {
+                "properties": {
+                  "lon": {
+                    "type": "number"
+                  },
+                  "lat": {
+                    "type": "number"
+                  }
+                },
+                "type": "object"
+              },
+              "qcode": {
+                "type": "string"
+              },
+              "keyword": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "poi": {
+          "items": {
+            "properties": {
+              "location": {
+                "type": "object",
+                "properties": {
+                  "lat": {
+                    "type": "number"
+                  },
+                  "lon": {
+                    "type": "number"
+                  }
+                }
+              },
+              "qcode": {
+                "type": "string"
+              },
+              "keyword": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "keyword": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "qcode": {
+                "indexable": false,
+                "searchable": false,
+                "retrievable": false,
+                "type": "string"
+              },
+              "keyword": {
+                "indexable": true,
+                "dynamicFacetable": true,
+                "searchable": true,
+                "retrievable": true,
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "album": {
+          "items": {
+            "properties": {
+              "role": {
+                "type": "string"
+              },
+              "keyword": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "country": {
+          "items": {
+            "type": "object",
+            "properties": {
+              "keyword": {
+                "type": "string",
+                "searchable": true
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "lon": {
+                    "type": "number"
+                  },
+                  "lat": {
+                    "type": "number"
+                  }
+                }
+              },
+              "qcode": {
+                "type": "string",
+                "searchable": true
+              }
+            }
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "original_language": {
+      "dynamicFacetable": true,
+      "searchable": true,
+      "type": "string",
+      "retrievable": true,
+      "indexable": true
+    },
+    "countryname": {
+      "type": "string",
+      "indexable": true,
+      "dynamicFacetable": true,
+      "retrievable": true,
+      "searchable": true
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}
